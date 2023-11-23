@@ -24,7 +24,7 @@
     }
 
     function searchName(){
-        let name = $("name").val();
+        let name = $("#name").val();
         let TestDataClass = ncmb.DataStore(db);
         TestDataClass.equalTo("name",name).fetchAll()
         .then(function(results){
